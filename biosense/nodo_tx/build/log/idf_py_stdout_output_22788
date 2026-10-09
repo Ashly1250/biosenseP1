@@ -1,0 +1,747 @@
+Command: C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe C:\esp\v5.5.3\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\ayele\Downloads\biosense_esp-idf\biosense\nodo_tx\build\biosense_tx.elf C:\Users\ayele\Downloads\biosense_esp-idf\biosense\nodo_tx\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe' 'C:\esp\v5.5.3\esp-idf\tools\idf.py' '-p' 'COM5'
+ESP-ROM:esp32s3-20210327
+��� Enabling RNG early entropy source...
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56)�ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Oct  9 2026 08:59:11[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.1[0m
+[0;32mI (28) boot: efuse block revision: v1.2[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d430h ( 54320) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001d458 vaddr=3fc95200 size=02bc0h ( 11200) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1e1d4h (123348) map[0m
+[0;32mI (123) esp_image: segment 3: paddr=0003e1fc vaddr=3fc97dc0 size=0079ch (  1948) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=0003e9a0 vaddr=40374000 size=110f8h ( 69880) load[0m
+[0;32mI (142) esp_image: segment 5: paddr=0004faa0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (149) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (149) boot: Disabling RNG early entropy source...[0m
+[0;32mI (160) cpu_start: Multicore app[0m
+[0;32mI (168) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (170) app_init: Application information:[0m
+[0;32mI (174) app_init: Project name:     biosense_tx[0m
+[0;32mI (179) app_init: App version:      1[0m
+[0;32mI (182) app_init: Compile time:     Oct  9 2026 08:58:06[0m
+[0;32mI (187) app_init: ELF file SHA256:  aa4fded15...[0m
+[0;32mI (191) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (195) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (199) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (203) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (213) heap_init: At 3FC98EE8 len 00050828 (322 KiB): RAM[0m
+[0;32mI (218) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (223) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (235) spi_flash: detected chip: gd[0m
+[0;32mI (237) spi_flash: flash io: dio[0m
+[0;32mI (241) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (247) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) TX: BIOSENSE - Nodo transmisor[0m
+[0;32mI (285) sensors: Sensores inicializados[0m
+[0;32mI (349) sx1262: SX1262 listo: 915000000 Hz, SF7, CR4/5, 14 dBm[0m
+[0;32mI (351) main_task: Returned from app_main()[0m
+[0;32mI (1125) TX: Trama: 25.19,14.38,4.75,10.86,944.84[0m
+[0;32mI (1198) TX: Datos enviados[0m
+[0;32mI (6124) TX: Trama: 25.19,13.12,7.09,7.41,944.84[0m
+[0;32mI (6197) TX: Datos enviados[0m
+[0;32mI (11124) TX: Trama: 25.19,171.43,7.89,4.10,902.58[0m
+[0;32mI (11197) TX: Datos enviados[0m
+[0;32mI (16124) TX: Trama: 25.19,170.37,8.69,3.48,917.42[0m
+[0;32mI (16197) TX: Datos enviados[0m
+[0;32mI (21124) TX: Trama: 25.19,15.21,8.02,4.46,966.45[0m
+[0;32mI (21197) TX: Datos enviados[0m
+[0;32mI (26124) TX: Trama: 25.19,15.21,7.65,11.31,968.71[0m
+[0;32mI (26197) TX: Datos enviados[0m
+[0;32mI (31124) TX: Trama: 25.19,15.63,5.95,11.56,969.03[0m
+[0;32mI (31197) TX: Datos enviados[0m
+[0;32mI (36124) TX: Trama: 25.19,14.80,6.75,11.45,969.03[0m
+[0;32mI (36197) TX: Datos enviados[0m
+[0;32mI (41124) TX: Trama: 25.19,15.21,4.81,11.50,969.03[0m
+[0;32mI (41197) TX: Datos enviados[0m
+[0;32mI (46124) TX: Trama: 25.19,14.38,7.19,9.28,970.32[0m
+[0;32mI (46197) TX: Datos enviados[0m
+[0;32mI (51124) TX: Trama: 25.19,14.38,8.44,5.39,969.03[0m
+[0;32mI (51197) TX: Datos enviados[0m
+[0;32mI (56124) TX: Trama: 25.19,13.54,4.83,2.54,969.03[0m
+[0;32mI (56197) TX: Datos enviados[0m
+[0;32mI (61124) TX: Trama: 25.19,12.70,8.39,4.55,969.03[0m
+[0;32mI (61197) TX: Datos enviados[0m
+[0;32mI (66124) TX: Trama: 25.19,13.54,6.93,9.99,969.03[0m
+[0;32mI (66197) TX: Datos enviados[0m
+[0;32mI (71124) TX: Trama: 25.19,11.86,5.32,11.68,969.03[0m
+[0;32mI (71197) TX: Datos enviados[0m
+[0;32mI (76124) TX: Trama: 25.19,13.12,7.56,9.50,969.68[0m
+[0;32mI (76197) TX: Datos enviados[0m
+[0;32mI (81124) TX: Trama: 25.19,10.18,6.23,11.74,973.23[0m
+[0;32mI (81197) TX: Datos enviados[0m
+[0;32mI (86124) TX: Trama: 25.19,11.86,6.47,8.42,969.03[0m
+[0;32mI (86197) TX: Datos enviados[0m
+[0;32mI (91124) TX: Trama: 25.19,12.70,9.13,6.57,981.29[0m
+[0;32mI (91197) TX: Datos enviados[0m
+[0;32mI (96124) TX: Trama: 25.19,10.60,10.15,3.70,982.58[0m
+[0;32mI (96197) TX: Datos enviados[0m
+[0;32mI (101124) TX: Trama: 25.19,11.02,8.24,6.64,985.48[0m
+[0;32mI (101197) TX: Datos enviados[0m
+[0;32mI (106124) TX: Trama: 25.19,12.70,3.85,2.41,994.84[0m
+[0;32mI (106197) TX: Datos enviados[0m
+[0;32mI (111124) TX: Trama: 25.19,11.86,3.14,7.52,995.48[0m
+[0;32mI (111197) TX: Datos enviados[0m
+[0;32mI (116124) TX: Trama: 25.19,11.44,3.94,4.92,996.77[0m
+[0;32mI (116197) TX: Datos enviados[0m
+[0;32mI (121124) TX: Trama: 25.19,11.86,4.43,7.91,995.48[0m
+[0;32mI (121197) TX: Datos enviados[0m
+[0;32mI (126124) TX: Trama: 25.19,10.60,3.05,8.54,996.45[0m
+[0;32mI (126197) TX: Datos enviados[0m
+[0;32mI (131124) TX: Trama: 25.19,10.60,5.91,4.89,996.77[0m
+[0;32mI (131197) TX: Datos enviados[0m
+[0;32mI (136124) TX: Trama: 25.19,11.86,9.21,3.17,996.77[0m
+[0;32mI (136197) TX: Datos enviados[0m
+[0;32mI (141124) TX: Trama: 25.19,10.60,9.52,4.84,996.45[0m
+[0;32mI (141197) TX: Datos enviados[0m
+[0;32mI (146124) TX: Trama: 25.19,9.76,5.32,9.96,996.77[0m
+[0;32mI (146197) TX: Datos enviados[0m
+[0;32mI (151124) TX: Trama: 25.19,8.49,5.35,9.97,997.74[0m
+[0;32mI (151197) TX: Datos enviados[0m
+[0;32mI (156124) TX: Trama: 25.19,7.65,9.92,4.14,997.74[0m
+[0;32mI (156197) TX: Datos enviados[0m
+[0;32mI (161124) TX: Trama: 25.19,11.02,8.62,3.43,997.74[0m
+[0;32mI (161197) TX: Datos enviados[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Oct  9 2026 08:59:11[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.1[0m
+[0;32mI (28) boot: efuse block revision: v1.2[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d430h ( 54320) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001d458 vaddr=3fc95200 size=02bc0h ( 11200) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1e1d4h (123348) map[0m
+[0;32mI (123) esp_image: segment 3: paddr=0003e1fc vaddr=3fc97dc0 size=0079ch (  1948) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=0003e9a0 vaddr=40374000 size=110f8h ( 69880) load[0m
+[0;32mI (142) esp_image: segment 5: paddr=0004faa0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (149) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (149) boot: Disabling RNG early entropy source...[0m
+[0;32mI (160) cpu_start: Multicore app[0m
+[0;32mI (168) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (170) app_init: Application information:[0m
+[0;32mI (174) app_init: Project name:     biosense_tx[0m
+[0;32mI (179) app_init: App version:      1[0m
+[0;32mI (182) app_init: Compile time:     Oct  9 2026 08:58:06[0m
+[0;32mI (187) app_init: ELF file SHA256:  aa4fded15...[0m
+[0;32mI (191) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (195) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (199) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (203) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (213) heap_init: At 3FC98EE8 len 00050828 (322 KiB): RAM[0m
+[0;32mI (218) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (223) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (235) spi_flash: detected chip: gd[0m
+[0;32mI (237) spi_flash: flash io: dio[0m
+[0;32mI (241) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (247) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) TX: BIOSENSE - Nodo transmisor[0m
+[0;32mI (285) sensors: Sensores inicializados[0m
+[0;32mI (349) sx1262: SX1262 listo: 915000000 Hz, SF7, CR4/5, 14 dBm[0m
+[0;32mI (351) main_task: Returned from app_main()[0m
+[0;32mI (1125) TX: Trama: 25.19,13.54,5.70,5.48,988.06[0m
+[0;32mI (1198) TX: Datos enviados[0m
+[0;32mI (6124) TX: Trama: 25.19,10.60,5.70,5.71,988.39[0m
+[0;32mI (6197) TX: Datos enviados[0m
+[0;32mI (11124) TX: Trama: 25.19,11.02,3.93,3.41,989.03[0m
+[0;32mI (11197) TX: Datos enviados[0m
+[0;32mI (16124) TX: Trama: 25.19,10.60,3.49,9.94,823.87[0m
+[0;32mI (16197) TX: Datos enviados[0m
+[0;32mI (21124) TX: Trama: 25.19,10.18,3.61,9.76,906.13[0m
+[0;32mI (21197) TX: Datos enviados[0m
+[0;32mI (26124) TX: Trama: 25.19,9.76,6.36,6.91,904.19[0m
+[0;32mI (26197) TX: Datos enviados[0m
+[0;32mI (31124) TX: Trama: 25.19,8.91,8.79,9.14,870.65[0m
+[0;32mI (31197) TX: Datos enviados[0m
+[0;32mI (36124) TX: Trama: 25.19,9.34,5.84,10.88,869.35[0m
+[0;32mI (36197) TX: Datos enviados[0m
+[0;32mI (41124) TX: Trama: 25.19,10.18,5.93,7.86,925.48[0m
+[0;32mI (41197) TX: Datos enviados[0m
+[0;32mI (46124) TX: Trama: 25.19,10.60,7.90,4.48,924.84[0m
+[0;32mI (46197) TX: Datos enviados[0m
+[0;32mI (51124) TX: Trama: 25.19,10.60,8.44,3.21,940.32[0m
+[0;32mI (51197) TX: Datos enviados[0m
+[0;32mI (56124) TX: Trama: 25.19,8.49,7.77,4.48,942.26[0m
+[0;32mI (56197) TX: Datos enviados[0m
+[0;32mI (61124) TX: Trama: 25.19,11.86,5.35,6.69,920.32[0m
+[0;32mI (61197) TX: Datos enviados[0m
+[0;32mI (66124) TX: Trama: 25.19,10.18,4.30,19.98,898.39[0m
+[0;32mI (66197) TX: Datos enviados[0m
+[0;32mI (71124) TX: Trama: 25.19,9.76,3.52,11.73,891.29[0m
+[0;32mI (71197) TX: Datos enviados[0m
+[0;32mI (76124) TX: Trama: 25.19,14.80,6.65,9.97,967.74[0m
+[0;32mI (76197) TX: Datos enviados[0m
+[0;32mI (81124) TX: Trama: 25.19,11.44,6.74,11.10,911.94[0m
+[0;32mI (81197) TX: Datos enviados[0m
+[0;32mI (86124) TX: Trama: 25.19,13.12,9.12,3.39,919.68[0m
+[0;32mI (86197) TX: Datos enviados[0m
+[0;32mI (91124) TX: Trama: 25.19,10.60,8.40,4.66,914.19[0m
+[0;32mI (91197) TX: Datos enviados[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Oct  9 2026 08:59:11[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.1[0m
+[0;32mI (28) boot: efuse block revision: v1.2[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d430h ( 54320) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001d458 vaddr=3fc95200 size=02bc0h ( 11200) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1e1d4h (123348) map[0m
+[0;32mI (123) esp_image: segment 3: paddr=0003e1fc vaddr=3fc97dc0 size=0079ch (  1948) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=0003e9a0 vaddr=40374000 size=110f8h ( 69880) load[0m
+[0;32mI (142) esp_image: segment 5: paddr=0004faa0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (149) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (149) boot: Disabling RNG early entropy source...[0m
+[0;32mI (160) cpu_start: Multicore app[0m
+[0;32mI (168) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (170) app_init: Application information:[0m
+[0;32mI (174) app_init: Project name:     biosense_tx[0m
+[0;32mI (179) app_init: App version:      1[0m
+[0;32mI (182) app_init: Compile time:     Oct  9 2026 08:58:06[0m
+[0;32mI (187) app_init: ELF file SHA256:  aa4fded15...[0m
+[0;32mI (191) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (195) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (199) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (203) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (213) heap_init: At 3FC98EE8 len 00050828 (322 KiB): RAM[0m
+[0;32mI (218) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (223) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (235) spi_flash: detected chip: gd[0m
+[0;32mI (237) spi_flash: flash io: dio[0m
+[0;32mI (241) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (247) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) TX: BIOSENSE - Nodo transmisor[0m
+[0;32mI (285) sensors: Sensores inicializados[0m
+[0;32mI (349) sx1262: SX1262 listo: 915000000 Hz, SF7, CR4/5, 14 dBm[0m
+[0;32mI (351) main_task: Returned from app_main()[0m
+[0;32mI (1125) TX: Trama: 25.19,12.70,9.23,3.30,862.58[0m
+[0;32mI (1198) TX: Datos enviados[0m
+[0;32mI (6124) TX: Trama: 25.25,15.20,7.04,5.79,853.23[0m
+[0;32mI (6197) TX: Datos enviados[0m
+[0;32mI (11124) TX: Trama: 25.25,12.27,0.70,12.27,914.19[0m
+[0;32mI (11197) TX: Datos enviados[0m
+[0;32mI (16124) TX: Trama: 25.25,12.68,2.17,5.43,902.90[0m
+[0;32mI (16197) TX: Datos enviados[0m
+[0;32mI (21124) TX: Trama: 25.19,11.02,6.48,7.43,902.90[0m
+[0;32mI (21197) TX: Datos enviados[0m
+[0;32mI (26124) TX: Trama: 25.19,9.76,5.81,6.01,921.94[0m
+[0;32mI (26197) TX: Datos enviados[0m
+[0;32mI (31124) TX: Trama: 25.25,9.32,6.03,9.27,927.74[0m
+[0;32mI (31197) TX: Datos enviados[0m
+[0;32mI (36124) TX: Trama: 25.25,11.85,6.36,8.55,923.55[0m
+[0;32mI (36197) TX: Datos enviados[0m
+[0;32mI (41124) TX: Trama: 25.25,16.45,4.64,10.75,965.48[0m
+[0;32mI (41197) TX: Datos enviados[0m
+[0;32mI (46124) TX: Trama: 25.25,11.85,3.29,11.71,892.26[0m
+[0;32mI (46197) TX: Datos enviados[0m
+[0;32mI (51124) TX: Trama: 25.25,8.90,8.57,16.69,904.52[0m
+[0;32mI (51197) TX: Datos enviados[0m
+[0;32mI (56124) TX: Trama: 25.19,10.18,4.97,13.39,902.26[0m
+[0;32mI (56197) TX: Datos enviados[0m
+[0;32mI (61124) TX: Trama: 25.19,9.34,13.08,3.52,885.81[0m
+[0;32mI (61197) TX: Datos enviados[0m
+[0;32mI (66124) TX: Trama: 25.19,8.49,6.58,6.93,960.65[0m
+[0;32mI (66197) TX: Datos enviados[0m
+[0;32mI (71124) TX: Trama: 25.25,8.90,8.14,8.35,941.61[0m
+[0;32mI (71197) TX: Datos enviados[0m
+[0;32mI (76124) TX: Trama: 25.25,8.90,0.00,11.43,952.90[0m
+[0;32mI (76197) TX: Datos enviados[0m
+[0;32mI (81124) TX: Trama: 25.19,8.07,9.10,3.72,968.71[0m
+[0;32mI (81197) TX: Datos enviados[0m
+[0;32mI (86124) TX: Trama: 25.25,10.17,3.96,12.77,901.61[0m
+[0;32mI (86197) TX: Datos enviados[0m
+[0;32mI (91124) TX: Trama: 25.25,10.59,5.44,5.59,942.26[0m
+[0;32mI (91197) TX: Datos enviados[0m
+[0;32mI (96124) TX: Trama: 25.19,14.38,3.82,9.37,941.29[0m
+[0;32mI (96197) TX: Datos enviados[0m
+[0;32mI (101124) TX: Trama: 25.19,12.28,7.26,4.10,940.97[0m
+[0;32mI (101197) TX: Datos enviados[0m
+[0;32mI (106124) TX: Trama: 25.19,10.60,6.13,6.80,940.65[0m
+[0;32mI (106197) TX: Datos enviados[0m
+[0;32mI (111124) TX: Trama: 25.25,11.43,2.57,11.17,934.52[0m
+[0;32mI (111197) TX: Datos enviados[0m
+[0;32mI (116124) TX: Trama: 25.19,11.44,5.51,2.18,860.32[0m
+[0;32mI (116197) TX: Datos enviados[0m
+[0;32mI (121124) TX: Trama: 25.25,10.59,3.89,7.81,883.55[0m
+[0;32mI (121197) TX: Datos enviados[0m
+[0;32mI (126124) TX: Trama: 25.25,10.59,8.11,4.46,886.13[0m
+[0;32mI (126197) TX: Datos enviados[0m
+[0;32mI (131124) TX: Trama: 25.25,9.32,7.93,7.02,878.39[0m
+[0;32mI (131197) TX: Datos enviados[0m
+[0;32mI (136124) TX: Trama: 25.19,9.76,5.70,14.44,886.13[0m
+[0;32mI (136197) TX: Datos enviados[0m
+[0;32mI (141124) TX: Trama: 25.19,12.28,5.67,7.00,927.10[0m
+[0;32mI (141197) TX: Datos enviados[0m
+[0;32mI (146124) TX: Trama: 25.19,10.60,3.68,7.67,930.32[0m
+[0;32mI (146197) TX: Datos enviados[0m
+[0;32mI (151124) TX: Trama: 25.00,65.20,7.48,6.21,930.32[0m
+[0;32mI (151197) TX: Datos enviados[0m
+[0;32mI (156124) TX: Trama: 24.56,72.06,7.99,4.32,932.26[0m
+[0;32mI (156197) TX: Datos enviados[0m
+[0;32mI (161124) TX: Trama: 24.31,66.86,6.98,8.11,932.58[0m
+[0;32mI (161197) TX: Datos enviados[0m
+[0;32mI (166124) TX: Trama: 24.31,66.07,8.68,6.33,933.87[0m
+[0;32mI (166197) TX: Datos enviados[0m
+[0;32mI (171124) TX: Trama: 24.25,70.52,10.87,12.57,933.55[0m
+[0;32mI (171202) TX: Datos enviados[0m
+[0;32mI (176124) TX: Trama: 24.19,64.23,6.93,5.00,934.52[0m
+[0;32mI (176197) TX: Datos enviados[0m
+[0;32mI (181124) TX: Trama: 24.12,64.71,5.38,5.91,934.52[0m
+[0;32mI (181197) TX: Datos enviados[0m
+[0;32mI (186124) TX: Trama: 24.06,65.19,5.00,9.04,935.16[0m
+[0;32mI (186197) TX: Datos enviados[0m
+[0;32mI (191124) TX: Trama: 24.00,64.87,8.70,4.01,935.16[0m
+[0;32mI (191197) TX: Datos enviados[0m
+[0;32mI (196124) TX: Trama: 23.94,66.55,7.24,8.63,935.48[0m
+[0;32mI (196197) TX: Datos enviados[0m
+[0;32mI (201124) TX: Trama: 23.94,66.55,5.70,5.52,935.48[0m
+[0;32mI (201197) TX: Datos enviados[0m
+[0;32mI (206124) TX: Trama: 23.94,66.55,6.13,7.88,935.81[0m
+[0;32mI (206197) TX: Datos enviados[0m
+[0;32mI (211124) TX: Trama: 23.88,66.63,4.10,9.21,936.13[0m
+[0;32mI (211197) TX: Datos enviados[0m
+[0;32mI (216124) TX: Trama: 24.00,72.85,9.27,3.78,937.42[0m
+[0;32mI (216197) TX: Datos enviados[0m
+[0;32mI (221124) TX: Trama: 24.00,68.87,6.67,12.94,937.10[0m
+[0;32mI (221197) TX: Datos enviados[0m
+[0;32mI (226124) TX: Trama: 24.00,66.47,5.40,2.77,938.39[0m
+[0;32mI (226197) TX: Datos enviados[0m
+[0;32mI (231124) TX: Trama: 23.94,68.55,4.43,6.48,937.42[0m
+[0;32mI (231197) TX: Datos enviados[0m
+[0;32mI (236124) TX: Trama: 23.94,68.55,10.25,3.38,937.10[0m
+[0;32mI (236197) TX: Datos enviados[0m
+[0;32mI (241124) TX: Trama: 23.94,66.55,6.70,10.32,936.77[0m
+[0;32mI (241197) TX: Datos enviados[0m
+[0;32mI (246124) TX: Trama: 23.94,66.55,6.58,9.10,937.10[0m
+[0;32mI (246197) TX: Datos enviados[0m
+[0;32mI (251124) TX: Trama: 24.00,66.07,7.42,4.55,938.39[0m
+[0;32mI (251197) TX: Datos enviados[0m
+[0;32mI (256124) TX: Trama: 24.00,67.27,6.67,5.15,939.35[0m
+[0;32mI (256197) TX: Datos enviados[0m
+[0;32mI (261124) TX: Trama: 24.00,66.47,4.69,7.40,939.35[0m
+[0;32mI (261197) TX: Datos enviados[0m
+[0;32mI (266124) TX: Trama: 24.00,66.47,3.65,13.57,939.35[0m
+[0;32mI (266197) TX: Datos enviados[0m
+[0;32mI (271124) TX: Trama: 23.94,66.55,0.00,15.43,938.71[0m
+[0;32mI (271197) TX: Datos enviados[0m
+[0;32mI (276124) TX: Trama: 23.94,66.55,8.36,4.75,923.87[0m
+[0;32mI (276197) TX: Datos enviados[0m
+[0;32mI (281124) TX: Trama: 23.94,66.55,2.70,15.41,927.42[0m
+[0;32mI (281197) TX: Datos enviados[0m
+[0;32mI (286124) TX: Trama: 24.00,65.67,8.12,6.04,927.10[0m
+[0;32mI (286197) TX: Datos enviados[0m
+[0;32mI (291124) TX: Trama: 24.00,64.87,5.98,2.97,291.61[0m
+[0;32mI (291197) TX: Datos enviados[0m
+[0;32mI (296124) TX: Trama: 24.00,66.07,5.70,5.80,290.97[0m
+[0;32mI (296197) TX: Datos enviados[0m
+[0;32mI (301124) TX: Trama: 24.00,65.27,2.47,10.35,291.61[0m
+[0;32mI (301197) TX: Datos enviados[0m
+[0;32mI (306124) TX: Trama: 24.00,66.47,2.71,9.92,291.61[0m
+[0;32mI (306197) TX: Datos enviados[0m
+[0;32mI (311124) TX: Trama: 24.00,65.67,3.00,6.59,290.97[0m
+[0;32mI (311197) TX: Datos enviados[0m
+[0;32mI (316124) TX: Trama: 24.00,64.87,5.05,5.39,290.00[0m
+[0;32mI (316197) TX: Datos enviados[0m
+[0;32mI (321124) TX: Trama: 24.00,64.87,6.13,4.16,290.65[0m
+[0;32mI (321197) TX: Datos enviados[0m
+[0;32mI (326124) TX: Trama: 24.00,65.67,7.72,4.17,290.65[0m
+[0;32mI (326197) TX: Datos enviados[0m
+[0;32mI (331124) TX: Trama: 24.00,64.87,5.39,7.28,290.65[0m
+[0;32mI (331197) TX: Datos enviados[0m
+[0;32mI (336124) TX: Trama: 24.06,65.59,9.42,3.23,290.32[0m
+[0;32mI (336197) TX: Datos enviados[0m
+[0;32mI (341124) TX: Trama: 24.06,66.39,4.82,11.65,291.94[0m
+[0;32mI (341197) TX: Datos enviados[0m
+[0;32mI (346124) TX: Trama: 24.06,65.99,5.60,3.63,291.94[0m
+[0;32mI (346197) TX: Datos enviados[0m
+[0;32mI (351124) TX: Trama: 24.06,67.19,2.77,11.05,291.94[0m
+[0;32mI (351197) TX: Datos enviados[0m
+[0;32mI (356124) TX: Trama: 24.06,65.19,9.05,3.40,291.94[0m
+[0;32mI (356197) TX: Datos enviados[0m
+[0;32mI (361124) TX: Trama: 24.06,65.99,4.91,9.37,291.94[0m
+[0;32mI (361197) TX: Datos enviados[0m
+[0;32mI (366124) TX: Trama: 24.06,65.59,4.91,11.97,292.58[0m
+[0;32mI (366197) TX: Datos enviados[0m
+[0;32mI (371124) TX: Trama: 24.06,64.79,2.98,8.95,292.58[0m
+[0;32mI (371197) TX: Datos enviados[0m
+[0;32mI (376124) TX: Trama: 24.06,66.39,4.75,8.34,292.26[0m
+[0;32mI (376197) TX: Datos enviados[0m
+[0;32mI (381124) TX: Trama: 24.06,66.39,5.32,8.23,292.26[0m
+[0;32mI (381197) TX: Datos enviados[0m
+[0;32mI (386124) TX: Trama: 24.06,66.39,3.03,11.19,292.26[0m
+[0;32mI (386197) TX: Datos enviados[0m
+[0;32mI (391124) TX: Trama: 24.06,64.79,2.18,11.57,291.61[0m
+[0;32mI (391197) TX: Datos enviados[0m
+[0;32mI (396124) TX: Trama: 24.06,66.39,6.63,1.70,290.00[0m
+[0;32mI (396197) TX: Datos enviados[0m
+[0;32mI (401124) TX: Trama: 24.06,66.39,3.15,9.21,290.00[0m
+[0;32mI (401197) TX: Datos enviados[0m
+[0;32mI (406124) TX: Trama: 24.06,65.99,7.55,4.06,291.61[0m
+[0;32mI (406197) TX: Datos enviados[0m
+[0;32mI (411124) TX: Trama: 24.06,64.79,8.12,5.61,291.61[0m
+[0;32mI (411197) TX: Datos enviados[0m
+[0;32mI (416124) TX: Trama: 24.06,66.39,5.80,10.01,291.61[0m
+[0;32mI (416197) TX: Datos enviados[0m
+[0;32mI (421124) TX: Trama: 24.06,66.39,5.60,4.37,291.61[0m
+[0;32mI (421197) TX: Datos enviados[0m
+[0;32mI (426124) TX: Trama: 24.06,64.39,6.53,4.82,291.94[0m
+[0;32mI (426197) TX: Datos enviados[0m
+[0;32mI (431124) TX: Trama: 24.06,65.99,4.01,12.61,291.61[0m
+[0;32mI (431197) TX: Datos enviados[0m
+[0;32mI (436124) TX: Trama: 24.06,65.19,4.36,8.70,291.61[0m
+[0;32mI (436197) TX: Datos enviados[0m
+[0;32mI (441124) TX: Trama: 24.06,65.59,7.67,4.70,292.58[0m
+[0;32mI (441197) TX: Datos enviados[0m
+[0;32mI (446124) TX: Trama: 24.06,66.39,5.98,9.39,291.94[0m
+[0;32mI (446197) TX: Datos enviados[0m
+[0;32mI (451124) TX: Trama: 24.06,66.39,8.63,4.98,291.94[0m
+[0;32mI (451197) TX: Datos enviados[0m
+[0;32mI (456124) TX: Trama: 24.06,66.39,9.01,5.45,291.94[0m
+[0;32mI (456197) TX: Datos enviados[0m
+[0;32mI (461124) TX: Trama: 24.06,65.19,6.29,7.12,291.94[0m
+[0;32mI (461197) TX: Datos enviados[0m
+[0;32mI (466124) TX: Trama: 24.06,65.59,9.38,8.35,291.61[0m
+[0;32mI (466197) TX: Datos enviados[0m
+[0;32mI (471124) TX: Trama: 24.06,65.99,6.97,6.70,291.94[0m
+[0;32mI (471197) TX: Datos enviados[0m
+[0;32mI (476124) TX: Trama: 24.12,67.11,8.68,2.90,291.94[0m
+[0;32mI (476197) TX: Datos enviados[0m
+[0;32mI (481124) TX: Trama: 24.12,67.11,3.11,6.65,291.94[0m
+[0;32mI (481197) TX: Datos enviados[0m
+[0;32mI (486124) TX: Trama: 24.06,65.99,6.33,5.18,291.94[0m
+[0;32mI (486197) TX: Datos enviados[0m
+[0;32mI (491124) TX: Trama: 24.06,66.39,5.39,5.55,291.61[0m
+[0;32mI (491197) TX: Datos enviados[0m
+[0;32mI (496124) TX: Trama: 24.06,65.99,4.21,6.62,291.61[0m
+[0;32mI (496197) TX: Datos enviados[0m
+[0;32mI (501124) TX: Trama: 24.06,66.79,5.16,8.29,291.94[0m
+[0;32mI (501197) TX: Datos enviados[0m
+[0;32mI (506124) TX: Trama: 24.06,66.39,3.77,6.29,291.61[0m
+[0;32mI (506197) TX: Datos enviados[0m
+[0;32mI (511124) TX: Trama: 24.12,65.51,8.62,6.54,290.97[0m
+[0;32mI (511197) TX: Datos enviados[0m
+[0;32mI (516124) TX: Trama: 24.12,65.91,7.49,4.14,290.97[0m
+[0;32mI (516197) TX: Datos enviados[0m
+[0;32mI (521124) TX: Trama: 24.12,66.31,7.81,5.20,290.97[0m
+[0;32mI (521197) TX: Datos enviados[0m
+[0;32mI (526124) TX: Trama: 24.06,66.39,2.61,15.25,290.97[0m
+[0;32mI (526197) TX: Datos enviados[0m
+[0;32mI (531124) TX: Trama: 24.06,66.39,2.38,17.62,290.97[0m
+[0;32mI (531197) TX: Datos enviados[0m
+[0;32mI (536124) TX: Trama: 24.06,66.39,3.23,13.29,290.97[0m
+[0;32mI (536197) TX: Datos enviados[0m
+[0;32mI (541124) TX: Trama: 24.06,66.39,7.56,2.83,290.97[0m
+[0;32mI (541197) TX: Datos enviados[0m
+[0;32mI (546124) TX: Trama: 24.12,65.91,4.60,2.10,291.61[0m
+[0;32mI (546197) TX: Datos enviados[0m
+[0;32mI (551124) TX: Trama: 24.12,66.31,5.42,1.68,290.97[0m
+[0;32mI (551197) TX: Datos enviados[0m
+[0;32mI (556124) TX: Trama: 24.12,66.31,3.90,5.15,291.61[0m
+[0;32mI (556197) TX: Datos enviados[0m
+[0;32mI (561124) TX: Trama: 24.06,66.39,3.50,10.88,291.61[0m
+[0;32mI (561197) TX: Datos enviados[0m
+[0;32mI (566124) TX: Trama: 24.12,66.71,7.12,9.15,291.61[0m
+[0;32mI (566197) TX: Datos enviados[0m
+[0;32mI (571124) TX: Trama: 24.12,65.91,6.00,7.28,291.61[0m
+[0;32mI (571197) TX: Datos enviados[0m
+[0;32mI (576124) TX: Trama: 24.06,66.39,5.73,7.09,291.61[0m
+[0;32mI (576197) TX: Datos enviados[0m
+[0;32mI (581124) TX: Trama: 24.12,65.51,3.94,9.21,290.97[0m
+[0;32mI (581197) TX: Datos enviados[0m
+[0;32mI (586124) TX: Trama: 24.12,66.31,2.17,11.62,290.97[0m
+[0;32mI (586197) TX: Datos enviados[0m
+[0;32mI (591124) TX: Trama: 24.12,65.11,6.38,6.18,290.97[0m
+[0;32mI (591197) TX: Datos enviados[0m
+[0;32mI (596124) TX: Trama: 24.12,66.31,7.17,5.32,290.97[0m
+[0;32mI (596197) TX: Datos enviados[0m
+[0;32mI (601124) TX: Trama: 24.12,66.31,3.68,12.34,290.97[0m
+[0;32mI (601197) TX: Datos enviados[0m
+[0;32mI (606124) TX: Trama: 24.12,66.31,4.48,11.87,291.61[0m
+[0;32mI (606197) TX: Datos enviados[0m
+[0;32mI (611124) TX: Trama: 24.12,65.51,6.21,8.63,290.97[0m
+[0;32mI (611197) TX: Datos enviados[0m
+[0;32mI (616124) TX: Trama: 24.12,65.91,8.03,12.13,290.97[0m
+[0;32mI (616197) TX: Datos enviados[0m
+[0;32mI (621124) TX: Trama: 24.12,66.31,9.94,5.87,290.97[0m
+[0;32mI (621197) TX: Datos enviados[0m
+[0;32mI (626124) TX: Trama: 24.12,67.91,7.76,10.52,290.97[0m
+[0;32mI (626197) TX: Datos enviados[0m
+[0;32mI (631124) TX: Trama: 24.12,66.31,2.65,15.30,290.00[0m
+[0;32mI (631197) TX: Datos enviados[0m
+[0;32mI (636124) TX: Trama: 24.12,66.31,2.70,13.65,290.00[0m
+[0;32mI (636197) TX: Datos enviados[0m
+[0;32mI (641124) TX: Trama: 24.12,66.31,3.70,10.48,290.65[0m
+[0;32mI (641197) TX: Datos enviados[0m
+[0;32mI (646124) TX: Trama: 24.12,64.71,5.41,10.19,287.10[0m
+[0;32mI (646197) TX: Datos enviados[0m
+[0;32mI (651124) TX: Trama: 24.12,65.51,4.33,12.41,287.10[0m
+[0;32mI (651197) TX: Datos enviados[0m
+[0;32mI (656124) TX: Trama: 24.12,66.31,5.94,6.64,287.42[0m
+[0;32mI (656197) TX: Datos enviados[0m
+[0;32mI (661124) TX: Trama: 24.12,65.91,7.11,8.67,287.42[0m
+[0;32mI (661197) TX: Datos enviados[0m
+[0;32mI (666124) TX: Trama: 24.12,65.91,7.73,5.07,287.42[0m
+[0;32mI (666197) TX: Datos enviados[0m
+[0;32mI (671124) TX: Trama: 24.12,67.11,7.28,6.12,288.06[0m
+[0;32mI (671197) TX: Datos enviados[0m
+[0;32mI (676124) TX: Trama: 24.12,66.31,3.61,12.39,287.42[0m
+[0;32mI (676197) TX: Datos enviados[0m
+[0;32mI (681124) TX: Trama: 24.12,66.31,8.87,4.12,288.06[0m
+[0;32mI (681197) TX: Datos enviados[0m
+[0;32mI (686124) TX: Trama: 24.12,65.91,7.46,5.88,288.39[0m
+[0;32mI (686197) TX: Datos enviados[0m
+[0;32mI (691124) TX: Trama: 24.12,64.71,8.31,9.53,288.39[0m
+[0;32mI (691197) TX: Datos enviados[0m
+[0;32mI (696124) TX: Trama: 24.12,66.31,5.83,9.43,288.06[0m
+[0;32mI (696197) TX: Datos enviados[0m
+[0;32mI (701124) TX: Trama: 24.12,66.31,10.00,5.37,288.06[0m
+[0;32mI (701197) TX: Datos enviados[0m
+[0;32mI (706124) TX: Trama: 24.12,67.11,6.65,17.92,288.39[0m
+[0;32mI (706197) TX: Datos enviados[0m
+[0;32mI (711124) TX: Trama: 24.12,65.91,1.95,17.65,288.39[0m
+[0;32mI (711197) TX: Datos enviados[0m
+[0;32mI (716124) TX: Trama: 24.12,66.31,1.54,17.41,288.39[0m
+[0;32mI (716197) TX: Datos enviados[0m
+[0;32mI (721124) TX: Trama: 24.12,66.31,1.64,15.08,288.06[0m
+[0;32mI (721197) TX: Datos enviados[0m
+[0;32mI (726124) TX: Trama: 24.12,65.51,7.08,5.84,288.39[0m
+[0;32mI (726197) TX: Datos enviados[0m
+[0;32mI (731124) TX: Trama: 24.12,65.91,9.95,3.44,288.06[0m
+[0;32mI (731197) TX: Datos enviados[0m
+[0;32mI (736124) TX: Trama: 24.12,66.71,6.71,6.12,288.39[0m
+[0;32mI (736197) TX: Datos enviados[0m
+[0;32mI (741124) TX: Trama: 24.12,66.31,4.06,8.54,288.71[0m
+[0;32mI (741197) TX: Datos enviados[0m
+[0;32mI (746124) TX: Trama: 24.12,66.31,2.54,13.59,288.39[0m
+[0;32mI (746197) TX: Datos enviados[0m
+[0;32mI (751124) TX: Trama: 24.12,66.31,6.37,7.64,288.39[0m
+[0;32mI (751197) TX: Datos enviados[0m
+[0;32mI (756124) TX: Trama: 24.12,66.31,10.07,4.98,288.39[0m
+[0;32mI (756197) TX: Datos enviados[0m
+[0;32mI (761124) TX: Trama: 24.12,66.31,9.98,6.37,288.71[0m
+[0;32mI (761197) TX: Datos enviados[0m
+[0;32mI (766124) TX: Trama: 24.12,64.71,9.51,5.30,288.39[0m
+[0;32mI (766197) TX: Datos enviados[0m
+[0;32mI (771124) TX: Trama: 24.12,66.31,5.18,8.17,288.39[0m
+[0;32mI (771197) TX: Datos enviados[0m
+[0;32mI (776124) TX: Trama: 24.12,66.31,6.29,10.88,288.39[0m
+[0;32mI (776197) TX: Datos enviados[0m
+[0;32mI (781124) TX: Trama: 24.12,66.31,3.03,12.19,288.06[0m
+[0;32mI (781197) TX: Datos enviados[0m
+[0;32mI (786124) TX: Trama: 24.12,66.31,4.43,12.31,288.71[0m
+[0;32mI (786197) TX: Datos enviados[0m
+[0;32mI (791124) TX: Trama: 24.12,67.91,6.52,12.29,286.77[0m
+[0;32mI (791197) TX: Datos enviados[0m
+[0;32mI (796124) TX: Trama: 24.12,67.11,7.00,11.33,287.10[0m
+[0;32mI (796197) TX: Datos enviados[0m
+[0;32mI (801124) TX: Trama: 24.12,67.91,6.57,10.19,286.77[0m
+[0;32mI (801197) TX: Datos enviados[0m
+[0;32mI (806124) TX: Trama: 24.12,65.91,7.01,6.01,287.10[0m
+[0;32mI (806197) TX: Datos enviados[0m
+[0;32mI (811124) TX: Trama: 24.12,66.31,6.19,5.37,287.10[0m
+[0;32mI (811197) TX: Datos enviados[0m
+[0;32mI (816124) TX: Trama: 24.12,67.91,3.02,15.23,286.77[0m
+[0;32mI (816197) TX: Datos enviados[0m
+[0;32mI (821124) TX: Trama: 24.12,66.31,8.01,7.33,287.10[0m
+[0;32mI (821197) TX: Datos enviados[0m
+[0;32mI (826124) TX: Trama: 24.12,65.91,8.12,8.83,287.10[0m
+[0;32mI (826197) TX: Datos enviados[0m
+[0;32mI (831124) TX: Trama: 24.12,66.31,5.72,6.12,287.10[0m
+[0;32mI (831197) TX: Datos enviados[0m
+[0;32mI (836124) TX: Trama: 24.19,66.23,8.16,3.59,287.10[0m
+[0;32mI (836197) TX: Datos enviados[0m
+[0;32mI (841124) TX: Trama: 24.12,65.11,5.60,7.04,287.10[0m
+[0;32mI (841197) TX: Datos enviados[0m
+[0;32mI (846124) TX: Trama: 24.12,65.91,3.01,12.30,287.10[0m
+[0;32mI (846197) TX: Datos enviados[0m
+[0;32mI (851124) TX: Trama: 24.12,65.91,2.72,10.81,287.10[0m
+[0;32mI (851197) TX: Datos enviados[0m
+[0;32mI (856124) TX: Trama: 24.12,65.11,3.05,9.86,287.10[0m
+[0;32mI (856197) TX: Datos enviados[0m
+[0;32mI (861124) TX: Trama: 24.12,66.71,6.08,9.03,287.10[0m
+[0;32mI (861197) TX: Datos enviados[0m
+[0;32mI (866124) TX: Trama: 24.12,66.71,9.64,6.04,287.10[0m
+[0;32mI (866197) TX: Datos enviados[0m
+[0;32mI (871124) TX: Trama: 24.19,65.83,8.48,3.39,287.10[0m
+[0;32mI (871197) TX: Datos enviados[0m
+[0;32mI (876124) TX: Trama: 24.12,66.31,8.36,3.78,287.10[0m
+[0;32mI (876197) TX: Datos enviados[0m
+[0;32mI (881124) TX: Trama: 24.12,65.11,4.31,11.60,287.10[0m
+[0;32mI (881197) TX: Datos enviados[0m
+[0;32mI (886124) TX: Trama: 24.19,66.23,3.01,10.90,287.10[0m
+[0;32mI (886197) TX: Datos enviados[0m
+[0;32mI (891124) TX: Trama: 24.19,66.63,6.11,6.83,287.10[0m
+[0;32mI (891197) TX: Datos enviados[0m
+[0;32mI (896124) TX: Trama: 24.19,66.23,5.91,5.64,287.10[0m
+[0;32mI (896197) TX: Datos enviados[0m
+[0;32mI (901124) TX: Trama: 24.19,65.83,4.87,7.50,287.10[0m
+[0;32mI (901197) TX: Datos enviados[0m
+[0;32mI (906124) TX: Trama: 24.19,67.03,4.57,9.48,287.42[0m
+[0;32mI (906197) TX: Datos enviados[0m
+[0;32mI (911124) TX: Trama: 24.12,64.71,3.73,8.76,283.55[0m
+[0;32mI (911197) TX: Datos enviados[0m
+[0;32mI (916124) TX: Trama: 24.19,66.23,3.61,8.68,284.52[0m
+[0;32mI (916197) TX: Datos enviados[0m
+[0;32mI (921124) TX: Trama: 24.19,66.63,6.29,5.87,287.42[0m
+[0;32mI (921197) TX: Datos enviados[0m
+[0;32mI (926124) TX: Trama: 24.19,69.41,7.24,1.74,291.61[0m
+[0;32mI (926197) TX: Datos enviados[0m
+[0;32mI (931124) TX: Trama: 24.19,68.62,5.37,5.46,291.94[0m
+[0;32mI (931197) TX: Datos enviados[0m
+[0;32mI (936124) TX: Trama: 24.19,68.62,8.36,8.73,291.61[0m
+[0;32mI (936197) TX: Datos enviados[0m
+[0;32mI (941124) TX: Trama: 24.19,66.63,3.33,5.46,290.32[0m
+[0;32mI (941197) TX: Datos enviados[0m
+[0;32mI (946124) TX: Trama: 24.19,65.43,8.14,9.53,291.61[0m
+[0;32mI (946197) TX: Datos enviados[0m
+[0;32mI (951124) TX: Trama: 24.19,65.83,7.80,4.10,290.97[0m
+[0;32mI (951197) TX: Datos enviados[0m
+[0;32mI (956124) TX: Trama: 24.19,65.43,7.52,10.75,290.97[0m
+[0;32mI (956197) TX: Datos enviados[0m
+[0;32mI (961124) TX: Trama: 24.19,67.03,5.38,14.60,291.61[0m
+[0;32mI (961197) TX: Datos enviados[0m
+[0;32mI (966124) TX: Trama: 24.19,65.83,7.46,12.79,290.97[0m
+[0;32mI (966197) TX: Datos enviados[0m
+[0;32mI (971124) TX: Trama: 24.19,66.63,8.45,10.26,285.48[0m
+[0;32mI (971197) TX: Datos enviados[0m
+[0;32mI (976124) TX: Trama: 24.19,66.23,8.58,8.65,288.71[0m
+[0;32mI (976197) TX: Datos enviados[0m
+[0;32mI (981124) TX: Trama: 24.19,66.23,10.27,6.90,288.71[0m
+[0;32mI (981197) TX: Datos enviados[0m
+[0;32mI (986124) TX: Trama: 24.19,65.03,8.98,2.92,288.71[0m
+[0;32mI (986197) TX: Datos enviados[0m
+[0;32mI (991124) TX: Trama: 24.19,67.03,5.95,6.63,288.71[0m
+[0;32mI (991197) TX: Datos enviados[0m
+[0;32mI (996124) TX: Trama: 24.19,65.03,3.07,10.30,288.71[0m
+[0;32mI (996197) TX: Datos enviados[0m
+[0;32mI (1001124) TX: Trama: 24.19,66.23,2.48,11.13,288.71[0m
+[0;32mI (1001197) TX: Datos enviados[0m
+[0;32mI (1006124) TX: Trama: 24.19,66.23,5.76,5.98,290.32[0m
+[0;32mI (1006197) TX: Datos enviados[0m
+[0;32mI (1011124) TX: Trama: 24.19,65.43,7.92,5.66,289.68[0m
+[0;32mI (1011197) TX: Datos enviados[0m
+[0;32mI (1016124) TX: Trama: 24.19,65.83,7.72,11.16,290.32[0m
+[0;32mI (1016197) TX: Datos enviados[0m
+[0;32mI (1021124) TX: Trama: 24.19,66.23,7.39,7.17,289.68[0m
+[0;32mI (1021197) TX: Datos enviados[0m
+[0;32mI (1026124) TX: Trama: 24.19,66.23,6.39,7.98,290.32[0m
+[0;32mI (1026197) TX: Datos enviados[0m
+[0;32mI (1031124) TX: Trama: 24.19,64.23,9.14,8.28,289.68[0m
+[0;32mI (1031197) TX: Datos enviados[0m
+[0;32mI (1036124) TX: Trama: 24.19,65.03,8.74,3.63,290.00[0m
+[0;32mI (1036197) TX: Datos enviados[0m
+[0;32mI (1041124) TX: Trama: 24.19,66.23,6.10,10.09,289.68[0m
+[0;32mI (1041197) TX: Datos enviados[0m
+[0;32mI (1046124) TX: Trama: 24.19,67.03,3.39,9.74,290.32[0m
+[0;32mI (1046197) TX: Datos enviados[0m
+[0;32mI (1051124) TX: Trama: 24.19,66.63,8.82,3.53,290.32[0m
+[0;32mI (1051197) TX: Datos enviados[0m
+[0;32mI (1056124) TX: Trama: 24.19,65.83,5.89,10.99,289.68[0m
+[0;32mI (1056197) TX: Datos enviados[0m
+[0;32mI (1061124) TX: Trama: 24.19,65.83,8.23,7.20,290.32[0m
+[0;32mI (1061197) TX: Datos enviados[0m
+[0;32mI (1066124) TX: Trama: 24.19,65.03,6.65,8.73,289.35[0m
+[0;32mI (1066197) TX: Datos enviados[0m
+[0;32mI (1071124) TX: Trama: 24.19,66.23,2.23,9.86,289.35[0m
+[0;32mI (1071197) TX: Datos enviados[0m
+[0;32mI (1076124) TX: Trama: 24.19,65.83,9.06,2.91,289.35[0m
+[0;32mI (1076197) TX: Datos enviados[0m
+[0;32mI (1081124) TX: Trama: 24.19,66.23,5.91,11.13,290.00[0m
+[0;32mI (1081197) TX: Datos enviados[0m
+[0;32mI (1086124) TX: Trama: 24.19,65.83,8.34,3.47,289.35[0m
+[0;32mI (1086197) TX: Datos enviados[0m
+[0;32mI (1091124) TX: Trama: 24.19,66.23,2.20,11.06,290.32[0m
+[0;32mI (1091197) TX: Datos enviados[0m
+[0;32mI (1096124) TX: Trama: 24.19,65.83,5.59,7.19,290.00[0m
+[0;32mI (1096197) TX: Datos enviados[0m
+[0;32mI (1101124) TX: Trama: 24.19,66.23,8.81,3.67,290.32[0m
+[0;32mI (1101197) TX: Datos enviados[0m
+[0;32mI (1106124) TX: Trama: 24.19,66.63,7.12,12.54,290.00[0m
+[0;32mI (1106197) TX: Datos enviados[0m
+[0;32mI (1111124) TX: Trama: 24.19,66.23,8.35,9.69,290.00[0m
+[0;32mI (1111197) TX: Datos enviados[0m
+[0;32mI (1116124) TX: Trama: 24.19,66.23,7.32,5.35,290.32[0m
+[0;32mI (1116197) TX: Datos enviados[0m
+[0;32mI (1121124) TX: Trama: 24.19,66.63,10.54,13.54,624.84[0m
+[0;32mI (1121202) TX: Datos enviados[0m
+[0;32mI (1126124) TX: Trama: 24.19,64.63,6.05,5.81,748.06[0m
+[0;32mI (1126197) TX: Datos enviados[0m
+[0;32mI (1131124) TX: Trama: 24.19,67.82,8.34,6.45,749.35[0m
+[0;32mI (1131197) TX: Datos enviados[0m
+[0;32mI (1136124) TX: Trama: 24.19,66.63,4.14,11.95,748.39[0m
+[0;32mI (1136197) TX: Datos enviados[0m
+[0;32mI (1141124) TX: Trama: 24.19,66.23,7.35,4.97,748.39[0m
+[0;32mI (1141197) TX: Datos enviados[0
